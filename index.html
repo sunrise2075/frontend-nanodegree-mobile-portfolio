@@ -33,6 +33,21 @@
         ga('create', 'UA-92198628-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script type="text/javascript">
+        // load Google fonts asynchronously
+        WebFontConfig = {
+            google: { families: [ 'Open+Sans:400,700' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
   </head>
 
   <body>
@@ -78,22 +93,6 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
-
-    <script type="text/javascript">
-        // load Google fonts asynchronously
-        WebFontConfig = {
-            google: { families: [ 'Open+Sans:400,700' ] }
-        };
-        (function() {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
   </body>
 </html>
 <link href="dist/css/style.css" rel="stylesheet">
